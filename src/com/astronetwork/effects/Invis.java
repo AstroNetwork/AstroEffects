@@ -12,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
  
-public class Invis extends JavaPlugin {
+public class Invis {
   
 	public static ArrayList<Player> cooldown = new ArrayList<Player>();
  
