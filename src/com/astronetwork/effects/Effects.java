@@ -26,7 +26,7 @@ public class Effects extends JavaPlugin {
  
 		if ((cmd.getName().equalsIgnoreCase("speed")) || (cmd.getName().equalsIgnoreCase("spd"))) {
 			if (this.cooldown.contains(player)) {
-				player.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "] " + red + "Please wait" + red.toString() + ChatColor.ITALIC + " one minute" + red + " before using this command again!");
+				player.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "] " + red + "Please wait" + red + ChatColor.ITALIC + " one minute" + red + " before using this command again!");
 				return true;
 			}
 			if (!sender.hasPermission("AstroEffects.speed")) {

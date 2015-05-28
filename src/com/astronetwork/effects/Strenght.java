@@ -20,16 +20,16 @@ public class Strenght extends JavaPlugin {
 		String blue = ChatColor.BLUE.toString();
 		String red = ChatColor.RED.toString();
  
-		if ((cmd.getName().equalsIgnoreCase("strenght")) || (cmd.getName().equalsIgnoreCase("str"))) {
+		if ((cmd.getName().equalsIgnoreCase("strength")) || (cmd.getName().equalsIgnoreCase("str"))) {
 			if (Effects.cooldown.contains(player)) {
-				player.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "] " + red + "Please wait" + ChatColor.ITALIC + " one minute" + red + " before using this command again!");
+				player.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "] " + red + "Please wait" + red + ChatColor.ITALIC + " one minute" + red + " before using this command again!");
 				return true;
 			}
-			if (!sender.hasPermission("AstroEffects.strenght")) {
-				sender.sendMessage(red + "I asked a fairy if you had permission, the fairy was pissed."); } else {
+			if (!sender.hasPermission("AstroEffects.strength")) {
+				sender.sendMessage(red + "You do not have permission!"); } else {
 					if (args.length == 0) {
-						player.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "]" + green + " You now have a" + white + " STRENGHT " + green + "buff for 5 minutes!");
-						player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 1200, 1));
+						player.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "]" + green + " You now have a" + white + " STRENGTH " + green + "buff for 5 minutes!");
+						player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 3000, 1));
 						Effects.cooldown.add(player);
 						Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
         	  public void run() {
@@ -41,8 +41,8 @@ public class Strenght extends JavaPlugin {
 					}if (args.length == 1) {
 						@SuppressWarnings("deprecation")
 						Player targetPlayer = player.getServer().getPlayer(args[0]);
-						targetPlayer.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "]" + green + " You now have a" + white + " STRENGHT " + green + "buff!");
-						targetPlayer.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 1200, 1));
+						targetPlayer.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "]" + green + " You now have a" + white + " STRENGTH " + green + "buff for 5 minutes!");
+						targetPlayer.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 3000, 1));
 					}
 				}
 			}
