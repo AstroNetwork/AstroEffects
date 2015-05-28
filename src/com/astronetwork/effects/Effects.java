@@ -24,8 +24,8 @@ public class Effects extends JavaPlugin {
 		String blue = ChatColor.BLUE.toString();
 		String red = ChatColor.RED.toString();
  
-		if ((cmd.getName().equalsIgnoreCase("speed")) || (cmd.getName().equalsIgnoreCase("spd"))) {
-			if (this.cooldown.contains(player)) {
+		if (cmd.getName().equalsIgnoreCase("speed") || cmd.getName().equalsIgnoreCase("spd")) {
+			if (cooldown.contains(player)) {
 				player.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "] " + red + "Please wait" + ChatColor.ITALIC + " one minute" + red + " before using this command again!");
 				return true;
 			}
@@ -34,10 +34,10 @@ public class Effects extends JavaPlugin {
 					if (args.length == 0) {
 						player.sendMessage(dblue + "[" + blue + "AstroEffects" + dblue + "]" + green + " You now have a" + white + " SPEED " + green + "buff for 5 minutes!");
 						player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 1200, 1));
-						this.cooldown.add(player);
+						cooldown.add(player);
 						Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
         	  public void run() {
-        		  Effects.this.cooldown.remove(player);
+        		  cooldown.remove(player);
         	  }
 						}
 						, 1200L);
