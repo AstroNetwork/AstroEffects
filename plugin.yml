@@ -1,0 +1,12 @@
+name: AstroEffects
+version: 1.0
+main: com.astronetwork.effects.Effects
+authors: [JustNiico,Lexuss]
+commands:
+	speed:
+		description: Get speed for 5 minutes.
+		alias: spd
+	strenght:
+		description: Get strenght for 5 minutes.
+		alias: str
+		
