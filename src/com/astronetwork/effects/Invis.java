@@ -14,7 +14,7 @@ import org.bukkit.potion.PotionEffectType;
  
 public class Invis extends JavaPlugin {
   
-	public static ArrayList<Player> cooldown = new ArrayList<Player>();
+	public  ArrayList<Player> cooldown = new ArrayList<Player>();
  
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 		final Player player = (Player)sender;
