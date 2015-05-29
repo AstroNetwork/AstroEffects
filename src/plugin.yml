@@ -5,9 +5,7 @@ authors: [JustNiico, Lexuss]
 commands:
 	speed:
 		description: Get speed for 5 minutes.
-		aliases: spd
 	strength:
 		description: Get strength for 5 minutes.
-		aliases: str
-	invisibility:
+	invis:
 	    description: Get invisibility for 5 minutes.
