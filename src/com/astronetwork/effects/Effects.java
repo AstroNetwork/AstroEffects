@@ -18,9 +18,6 @@ public class Effects extends JavaPlugin {
 	    }
 		Player p = (Player) sender;
 		if (cmd.getName().equalsIgnoreCase("speed")) {
-			if (!sender instanceof Player) {
-				sender.sendMessage(ChatColor.RED + "The console is not allowed to run this command!")
-			} else {
 			if (!p.hasPermission("astroeffects.speed")) {
 				p.sendMessage(ChatColor.RED + "Just_Niico says: YOU DO NOT HAVE PERMISSION!");
 			} else {
@@ -31,12 +28,7 @@ public class Effects extends JavaPlugin {
 				return true;
 		}
 		}
-		}
 			if (cmd.getName().equalsIgnoreCase("strength")) {
-							if (!sender instanceof Player) {
-				sender.sendMessage(ChatColor.RED + "The console is not allowed to run this command!")
-			}
-			else {
 				if (!p.hasPermission("astroeffects.strength")) {
 					p.sendMessage(ChatColor.RED + "Just_Niico says: YOU DO NOT HAVE PERMISSION!");
 				} else {
@@ -47,12 +39,7 @@ public class Effects extends JavaPlugin {
 					return true;
 				}
 			}
-			}
 			if (cmd.getName().equalsIgnoreCase("invis")) {
-				if (!sender instanceof Player) {
-					sender.sendMessage("The console isn't allowed to run this command!")
-				}
-				else {
 				if (!p.hasPermission("astroeffects.invis")) {
 				p.sendMessage(ChatColor.RED + "Just_Niico says: YOU DO NOT HAVE PERMISSION!");	
 				} else {
@@ -63,7 +50,6 @@ public class Effects extends JavaPlugin {
 					p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
 					return true;
 				}
-			}
 			}
 			return true;
 	}
