@@ -3,16 +3,19 @@ package com.astronetwork.effects;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
  
 public class Effects extends JavaPlugin {
-	
-
-	
+		
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
+	    if ((sender instanceof ConsoleCommandSender)) {
+	    	sender.sendMessage("Only players can run commands.");
+	    	return true;
+	    }
 		Player p = (Player) sender;
 		if (cmd.getName().equalsIgnoreCase("speed")) {
 			if (!sender instanceof Player) {
