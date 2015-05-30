@@ -11,3 +11,5 @@ commands:
 	    description: Get invisibility for 5 minutes.
 	haste:
 	 	description: Get haste for 5 minutes.
+	regen:
+		description: Get regeneration for 5 minutes.
