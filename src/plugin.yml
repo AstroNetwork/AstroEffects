@@ -9,3 +9,5 @@ commands:
 		description: Get strength for 5 minutes.
 	invis:
 	    description: Get invisibility for 5 minutes.
+	haste:
+	 	description: Get haste for 5 minutes.
