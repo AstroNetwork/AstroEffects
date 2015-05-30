@@ -13,3 +13,5 @@ commands:
 	 	description: Get haste for 5 minutes.
 	regen:
 		description: Get regeneration for 5 minutes.
+	jump:
+		description: Get jump boost for 5 minutes.
