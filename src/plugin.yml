@@ -15,3 +15,5 @@ commands:
 		description: Get regeneration for 5 minutes.
 	jump:
 		description: Get jump boost for 5 minutes.
+	nv:
+		description: Get night vision for 5 minutes.
