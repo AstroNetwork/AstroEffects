@@ -71,6 +71,16 @@ public class Effects extends JavaPlugin {
 				p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
 				return true;
 			}
+			if (cmd.getName().equalsIgnoreCase("jump")) {
+				if (!p.hasPermission("astroeffects.jumpboost")) {
+					p.sendMessage(ChatColor.RED + "Just_Niico says: YOU DO NOT HAVE PERMISSION!");
+				}
+				p.addPotionEffect(new PotionEffect(PotionEffectType.JUMP, 3000, 1));
+				p.sendMessage(ChatColor.GREEN + "The great Just_Niico and Lexuss gave you the Jump boost to jump higher!");
+				p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXUSS!");
+				p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
+				return true;
+			}
 			return true;
 	}
 		
