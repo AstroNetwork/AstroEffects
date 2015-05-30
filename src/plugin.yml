@@ -17,3 +17,5 @@ commands:
 		description: Get jump boost for 5 minutes.
 	nv:
 		description: Get night vision for 5 minutes.
+	waterbreath:
+		description: Get water breathing for 5 minutes.
