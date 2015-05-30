@@ -19,3 +19,5 @@ commands:
 		description: Get night vision for 5 minutes.
 	waterbreath:
 		description: Get water breathing for 5 minutes.
+	hearts:
+		description: Get absorption for 5 minutes.
