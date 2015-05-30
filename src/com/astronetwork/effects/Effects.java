@@ -23,7 +23,7 @@ public class Effects extends JavaPlugin {
 			} else {
 				p.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 3000, 1));
 				p.sendMessage(ChatColor.GREEN + "The great Just_Niico and Lexxus have gave you the Speed to fight!");
-				p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXXUS!");
+				p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXUSS!");
 				p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
 				return true;
 		}
@@ -34,7 +34,7 @@ public class Effects extends JavaPlugin {
 				} else {
 					p.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 3000, 1));
 					p.sendMessage(ChatColor.GREEN + "The great Just_Niico and Lexxus have gave you the Strength to fight!");
-					p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXXUS!");
+					p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXUSS!");
 					p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
 					return true;
 				}
@@ -46,11 +46,22 @@ public class Effects extends JavaPlugin {
 					p.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 3000, 1));
 					p.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 3000, 1));
 					p.sendMessage(ChatColor.GREEN + "The great Just_Niico and Lexxus have made you Invisible!");
-					p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXXUS!");
+					p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXUSS!");
 					p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
 					return true;
 				}
 			}
+			if (cmd.getName().equalsIgnoreCase("haste")) {
+				if (!p.hasPermission("astroeffects.invis")) {
+					p.sendMessage(ChatColor.RED + "Just_Niico says: YOU DO NOT HAVE PERMISSION!");
+				}
+				p.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 3000, 1));
+				p.sendMessage(ChatColor.GREEN + "The great Just_Niico and Lexuss gave you the Haste to dig faster than anyone!");
+				p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXUSS!");
+				p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
+				return true;
+			}
+			
 			return true;
 	}
 		
