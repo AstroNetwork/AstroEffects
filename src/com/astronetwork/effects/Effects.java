@@ -81,6 +81,16 @@ public class Effects extends JavaPlugin {
 				p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
 				return true;
 			}
+			if (cmd.getName().equalsIgnoreCase("nv")) {
+				if (!p.hasPermission("astroeffects.nightvision")) {
+					p.sendMessage(ChatColor.RED + "Just_Niico says: YOU DO NOT HAVE PERMISSION!");
+				}
+				p.addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 3000, 1));
+				p.sendMessage(ChatColor.GREEN + "The great Just_Niico and Lexuss gave you the night vision to see in the dark!");
+				p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXUSS!");
+				p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
+				return true;
+			}
 			return true;
 	}
 		
