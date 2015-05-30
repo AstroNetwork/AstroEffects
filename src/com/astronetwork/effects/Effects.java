@@ -52,7 +52,7 @@ public class Effects extends JavaPlugin {
 				}
 			}
 			if (cmd.getName().equalsIgnoreCase("haste")) {
-				if (!p.hasPermission("astroeffects.invis")) {
+				if (!p.hasPermission("astroeffects.haste")) {
 					p.sendMessage(ChatColor.RED + "Just_Niico says: YOU DO NOT HAVE PERMISSION!");
 				}
 				p.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 3000, 1));
@@ -61,7 +61,16 @@ public class Effects extends JavaPlugin {
 				p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
 				return true;
 			}
-			
+			if (cmd.getName().equalsIgnoreCase("regen")) {
+				if (!p.hasPermission("astroeffects.regen")) {
+					p.sendMessage(ChatColor.RED + "Just_Niico says: YOU DO NOT HAVE PERMISSION!");
+				}
+				p.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 3000, 1));
+				p.sendMessage(ChatColor.GREEN + "The great Just_Niico and Lexuss gave you the Regen to gain more hearts!");
+				p.sendMessage(ChatColor.GREEN + "LONG LIVE JUST_NIICO AND LEXUSS!");
+				p.sendMessage(ChatColor.LIGHT_PURPLE + "We all love them really <3 Rectoph loves them the most." + ChatColor.RED + "BUT YOU LOVE MARK OR BAN");
+				return true;
+			}
 			return true;
 	}
 		
